@@ -17,7 +17,7 @@ In here mainly focus to reverse shell and reverse shell scripting.
 
 In reverse shell, victim’s machine communicates back to the attacker’s machine to establish connection. Attacker’s machine has up and running listening port to receives the connection from victim’s machine by using command or code execution is achieved.
 
-pic
+![Reverse Shell Connection](https://user-images.githubusercontent.com/61746939/81786979-009bf600-951e-11ea-826c-1faee29c9984.jpg)
 
 ## Scripting
 
