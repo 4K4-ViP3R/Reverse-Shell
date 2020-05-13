@@ -7,8 +7,10 @@ Shell is the simple piece of program or a code that can be used to gain access t
 ### Types of shell
 
 Thera are two types of shell,
+
 	- Reverse shell
 	- Bind shell
+
 In here mainly focus to reverse shell and reverse shell scripting.
 
 ### Reverse shell
@@ -45,11 +47,14 @@ There are lot of language available to write reverse shell script. In here rever
 
 After importing that headers into the reverse shell scripting there are lot of important things to do in the main program body. In here focusing only to the important parts of the body that need to explain little bit. 
 In main body of the code need to define two main variables.
+
 	- int sockt;
 	- int port = 1234;
 
-- int sockt – help to hold the socket of the program. This is actually a system call. Therefore, no need to assign that to any variable.
-- int port – this is the variable that hold the reverse shell listening port number.
+```javascript
+int sockt – help to hold the socket of the program. This is actually a system call. Therefore, no need to assign that to any variable.
+int port – this is the variable that hold the reverse shell listening port number.
+```
 
 After that need to define data structure for socket address. In here we can use “struct” data type because this data type help to combine or store different types of data like arrays. And here we use “sockaddr_in” this is essentially defined in netinet header and it help to store all the internet addresses, which we going to use. And finally need to define own structure name. in here it indicates as “revsockaddr”. 
 
@@ -58,9 +63,12 @@ After that need to define data structure for socket address. In here we can use 
 After that need to call the socket function. Actually, socket function has three main arguments. These arguments define deferent characteristics. The first argument is for define the domain of the connection. It means IPv4 or IPv6. The second argument is for specify the connection. Third argument is for define the protocol.
 
 - E.g., sockt = socket (AF_INET, SOCK_STREAM, 0);
-	- AF_INET – define the domain is IPv4
-	- SOCK_STREAM – define the connection is two-way connection like between client and server.
-	- 0 – when using “0” as third argument, operating system can choose whether to use TCP or UDP for the connection.
+
+```javascript
+	AF_INET – define the domain is IPv4
+	SOCK_STREAM – define the connection is two-way connection like between client and server.
+	0 – when using “0” as third argument, operating system can choose whether to use TCP or UDP for the connection.
+```
 
 Now need to define the data structure of socket address using predefined calls and commands which include in the headers as below.
 
