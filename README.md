@@ -165,6 +165,8 @@ After complete the delivery process of the payload, attacker create the listener
 
 When victim run the executable file on his or her machine, attacker can simply get the reverse shell from victim’s machine
 
+![linux 5](https://user-images.githubusercontent.com/61746939/81788235-d9debf00-951f-11ea-8e07-a551370f4789.PNG)
+
 ## References
 
 - T. A. Nidecki, "What is Reverse Shell," acunetix, 26 August 2019. [Online]. Available: https://www.acunetix.com/blog/web-security-zone/what-is-reverse-shell/.
