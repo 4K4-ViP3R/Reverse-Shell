@@ -7,8 +7,8 @@ Shell is the simple piece of program or a code that can be used to gain access t
 ### Types of shell
 
 Thera are two types of shell,
-	1. Reverse shell
-	2. Bind shell
+	- Reverse shell
+	- Bind shell
 In here mainly focus to reverse shell and reverse shell scripting.
 
 ### Reverse shell
@@ -32,21 +32,21 @@ There are lot of language available to write reverse shell script. In here rever
 - #include <arpa/inet.h>
 
 ```javascrpit
-- #include <stdio.h> --- which is for standard input and output
-- #include <sys/socket.h> --- socket header that include number of functions and structures that will be needed when creating socket
-- #include <sys/types.h> --- that contains the definitions of a number of data types that will be used in system calls like socket and connect system calls.
-- #include <stdlib.h> --- include variable types, several macros and various number of functions for performing general functions.
-- #include <unistd.h> --- define miscellaneous symbolic constants and types as well as miscellaneous functions.
-- #include <netinet/in.h> --- contains constant and structures that are needed for internet domain addresses.
-- #include <arpa/inet.h> --- include definitions for internet operations
+#include <stdio.h> --- which is for standard input and output
+#include <sys/socket.h> --- socket header that include number of functions and structures that will be needed when creating socket
+#include <sys/types.h> --- that contains the definitions of a number of data types that will be used in system calls like socket and connect system calls.
+#include <stdlib.h> --- include variable types, several macros and various number of functions for performing general functions.
+#include <unistd.h> --- define miscellaneous symbolic constants and types as well as miscellaneous functions.
+#include <netinet/in.h> --- contains constant and structures that are needed for internet domain addresses.
+#include <arpa/inet.h> --- include definitions for internet operations
 ```
 
 ### Main Body
 
 After importing that headers into the reverse shell scripting there are lot of important things to do in the main program body. In here focusing only to the important parts of the body that need to explain little bit. 
 In main body of the code need to define two main variables.
-	1. int sockt;
-	2. int port = 1234;
+	- int sockt;
+	- int port = 1234;
 
 - int sockt – help to hold the socket of the program. This is actually a system call. Therefore, no need to assign that to any variable.
 - int port – this is the variable that hold the reverse shell listening port number.
