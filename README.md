@@ -143,7 +143,7 @@ int main(void){
 }
 ```
 
-pic
+![linux 01](https://user-images.githubusercontent.com/61746939/81787474-b9623500-951e-11ea-9ebf-f817410a7e72.PNG)
 
 ## Create executable
 
@@ -174,4 +174,4 @@ When victim run the executable file on his or her machine, attacker can simply g
 - "Header Files," The BSD UNIX Socket Library, [Online]. Available: https://support.sas.com/documentation/onlinedoc/sasc/doc750/html/lr2/zr2bsdhf.htm.
 - "Reverse Shell Cheat Sheet," GitHub, [Online]. Available: https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md.
 
-
+#### 4K4-ViP3R
