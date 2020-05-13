@@ -151,7 +151,7 @@ After complete the scripting, using gcc compiler attacker can create the executa
 
 - E.g., gcc filename.c -o executable_name
 
-pic
+![linux 2](https://user-images.githubusercontent.com/61746939/81787741-1cec6280-951f-11ea-96a1-9c894fcec764.PNG)
 
 ## Delivery mecahnism
 
