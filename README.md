@@ -161,7 +161,7 @@ After creating executable file, need to find proper deliverable method. These da
 
 After complete the delivery process of the payload, attacker create the listener to port number which use to create the reverse shell code using his or her machine which have the local IP address include in the reverse shell script.
 
-pic
+![linux 4](https://user-images.githubusercontent.com/61746939/81788045-89676180-951f-11ea-9c0d-2e11f48f8fe0.PNG)
 
 When victim run the executable file on his or her machine, attacker can simply get the reverse shell from victim’s machine
 
