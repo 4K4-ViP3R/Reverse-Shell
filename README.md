@@ -56,7 +56,7 @@ int sockt – help to hold the socket of the program. This is actually a system 
 int port – this is the variable that hold the reverse shell listening port number.
 ```
 
-After that need to define data structure for socket address. In here we can use “struct” data type because this data type help to combine or store different types of data like arrays. And here we use “sockaddr_in” this is essentially defined in netinet header and it help to store all the internet addresses, which we going to use. And finally need to define own structure name. in here it indicates as “revsockaddr”. 
+After that need to define data structure for socket address. In here we can use “struct” data type because this data type help to combine or store different types of data like arrays. And here we use “sockaddr_in” this is essentially defined in netinet header and it help to store all the internet addresses, which we going to use. And finally need to define own structure name. In here it indicates as “revsockaddr”. 
 
 - E.g., struct sockaddr_in revsockaddr;
 
@@ -96,7 +96,7 @@ Using above call, can get the exact length of the “revsockaddr”. After all o
 - dup2(sockt, 1);
 - dup2(sockt, 2);
 
-finally need to create constant that help to store the command that attacker want to execute. First need to declare the data type character and the constant itself.
+Finally need to create constant that help to store the command that attacker want to execute. First need to declare the data type character and the constant itself.
 
 - char * const argv [] = {“/bin/bash”, NULL}
 
@@ -104,7 +104,7 @@ argv [] is like a one-dimensional array of strings that going to be storing and 
 
 - execve (“/bin/bash”, argv, NULL);
 
-in above command specify the “/bin/bash” or SH whatever terminal attacker want, and specify argv command and NULL.
+In above command specify the “/bin/bash” or SH whatever terminal attacker want, and specify argv command and NULL.
 
 ## Finalized reverse shell script
 
