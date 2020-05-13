@@ -106,7 +106,7 @@ argv [] is like a one-dimensional array of strings that going to be storing and 
 
 in above command specify the “/bin/bash” or SH whatever terminal attacker want, and specify argv command and NULL.
 
-#Finalized reverse shell script
+## Finalized reverse shell script
 
 After completing all of the things mention in the previous section, attacker obtain the complete code that can be used to get reverse shell from the victim’s computer. In here reverse shell script wrote for get the reverse shell from Linux machine.
 
