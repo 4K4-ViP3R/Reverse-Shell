@@ -1,25 +1,25 @@
 # Reverse-Shell
 
-## What are shells?
+### What are shells?
 
 Shell is the simple piece of program or a code that can be used to gain access to victim machine and command execution on a device like servers, end points, smart phones, etc.
 
-##Types of shell
+### Types of shell
 
 Thera are two types of shell,
 	1. Reverse shell
 	2. Bind shell
 In here mainly focus to reverse shell and reverse shell scripting.
 
-##Reverse shell
+### Reverse shell
 
 In reverse shell, victim’s machine communicates back to the attacker’s machine to establish connection. Attacker’s machine has up and running listening port to receives the connection from victim’s machine by using command or code execution is achieved.
 
 pic
 
-# Scripting
+## Scripting
 
-##Libraries/Headers
+### Libraries/Headers
 
 There are lot of language available to write reverse shell script. In here reverse shell scripting write using C language. First need to figure out what kind of libraries and headers need to write reverse shell scripting. In C language there are lot of headers available. We mainly focus to some kind of headers that really helpful to write proper reverse shell scripting.
 
@@ -31,6 +31,7 @@ There are lot of language available to write reverse shell script. In here rever
 - #include <netinet/in.h>
 - #include <arpa/inet.h>
 
+```javascrpit
 - #include <stdio.h> --- which is for standard input and output
 - #include <sys/socket.h> --- socket header that include number of functions and structures that will be needed when creating socket
 - #include <sys/types.h> --- that contains the definitions of a number of data types that will be used in system calls like socket and connect system calls.
@@ -38,8 +39,9 @@ There are lot of language available to write reverse shell script. In here rever
 - #include <unistd.h> --- define miscellaneous symbolic constants and types as well as miscellaneous functions.
 - #include <netinet/in.h> --- contains constant and structures that are needed for internet domain addresses.
 - #include <arpa/inet.h> --- include definitions for internet operations
+```
 
-##Main Body
+### Main Body
 
 After importing that headers into the reverse shell scripting there are lot of important things to do in the main program body. In here focusing only to the important parts of the body that need to explain little bit. 
 In main body of the code need to define two main variables.
@@ -135,7 +137,7 @@ int main(void){
 
 pic
 
-#Create executable
+## Create executable
 
 After complete the scripting, using gcc compiler attacker can create the executable file based on the reverse shell script.
 
@@ -143,11 +145,11 @@ After complete the scripting, using gcc compiler attacker can create the executa
 
 pic
 
-#Delivery mecahnism
+## Delivery mecahnism
 
 After creating executable file, need to find proper deliverable method. These days most of the attckers (hackers) use social engineering techniques to deliver payload to victims. Lot of social engineering techniques are available. In here not going to mention or discuss that kind of social engineering techniques or payload deliverable methods.
 
-#Exploitation
+## Exploitation
 
 After complete the delivery process of the payload, attacker create the listener to port number which use to create the reverse shell code using his or her machine which have the local IP address include in the reverse shell script.
 
@@ -155,7 +157,7 @@ pic
 
 When victim run the executable file on his or her machine, attacker can simply get the reverse shell from victim’s machine
 
-#References
+## References
 
 - T. A. Nidecki, "What is Reverse Shell," acunetix, 26 August 2019. [Online]. Available: https://www.acunetix.com/blog/web-security-zone/what-is-reverse-shell/.
 - "ICMP Reverse Shell," infosec, 4 January 2018. [Online]. Available: https://resources.infosecinstitute.com/icmp-reverse-shell/.
